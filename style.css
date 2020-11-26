@@ -11,15 +11,30 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
+   
+    
+}
+.titleBox{
+    flex-basis: 100%;
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    margin: 1em;
+}
+h1{
+    font-size: 40px;
 }
 .galleryBox{
     display: flex;
     flex-direction: row;
-    /* overflow: hidden; */
-    flex-basis: 80%;
-    overflow: scroll;
+    flex-basis: 100%;
     justify-content: center;
-    
+    margin: 1em;
+    overflow-x: scroll;
+    background-color: #f8edeb;
+}
+.photoBox{
+    margin: 1em;
 }
 img{
     height: 500px;
