@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    display: flexbox;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.galleryBox{
+    display: flex;
+    flex-direction: row;
+    /* overflow: hidden; */
+    flex-basis: 80%;
+    overflow: scroll;
+    justify-content: center;
+    
+}
+img{
+    height: 500px;
+    width: auto;
+}
