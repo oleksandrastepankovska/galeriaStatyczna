@@ -1,30 +1,74 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     box-sizing: border-box;
 }
-.container{
+
+.klaudia {
+    height: 650px;
+    width: 1200px;
+    margin: 50px auto;
+}
+
+.klaudia #slider {
+    margin: 0 auto;
+    position: relative;
+    width: 60%;
+    height: 75%;
+}
+
+.klaudia .slide-img {
+    top: 0px;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.klaudia .slide-xd {
+    visibility: visible;
+}
+
+.klaudia .slide-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.klaudia .prev,
+.klaudia .next {
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.26);
+    z-index: 100;
+    cursor: pointer;
+}
+
+.klaudia .prev {
+    left: 0;
+}
+
+.klaudia .next {
+    right: 0;
+}
+
+/*       MARCELINA     */
+
+
+.marcelina .container {
     width: 100%;
     display: flexbox;
     height: 100vh;
     justify-content: center;
     align-items: center;
-   
-    
+
 }
-.titleBox{
-    flex-basis: 100%;
-    display: flexbox;
-    justify-content: center;
-    text-align: center;
-    margin: 1em;
-}
-h1{
-    font-size: 40px;
-}
-.galleryBox{
+
+.marcelina .galleryBox {
     display: flex;
     flex-direction: row;
     flex-basis: 100%;
@@ -33,10 +77,12 @@ h1{
     overflow-x: scroll;
     background-color: #f8edeb;
 }
-.photoBox{
+
+.marcelina .photoBox {
     margin: 1em;
 }
-img{
+
+.marcelina img {
     height: 500px;
     width: auto;
 }
