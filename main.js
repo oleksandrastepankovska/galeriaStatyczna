@@ -1,46 +1,51 @@
-const prev = document.querySelector(".prev");
-const next = document.querySelector(".next");
+function klaudia() {
 
-let current = document.getElementById("one");
+    const prev = document.querySelector(".prev");
+    const next = document.querySelector(".next");
 
-next.addEventListener("click", nextImg);
-prev.addEventListener("click", prevImg);
+    let current = document.getElementById("one");
 
-function show(image) {
-    console.dir(image)
-    if (current) {
-        current.style.visibility = "hidden"
+    next.addEventListener("click", nextImg);
+    prev.addEventListener("click", prevImg);
+
+    function show(image) {
+        console.dir(image)
+        if (current) {
+            current.style.visibility = "hidden"
+        }
+
+        if (!image.nextElementSibling) {
+            next.style.visibility = "hidden";
+        } else {
+            next.style.visibility = "visible";
+        }
+
+
+        if (!image.previousElementSibling) {
+            prev.style.visibility = "hidden";
+        } else {
+            prev.style.visibility = "visible";
+        }
+
+        current = image;
+        image.style.visibility = "visible"
+
     }
 
-    if (!image.nextElementSibling) {
-        next.style.visibility = "hidden";
-    } else {
-        next.style.visibility = "visible";
+
+    function nextImg(event) {
+        console.log("Xddd")
+        if (current.nextElementSibling)
+            show(current.nextElementSibling)
     }
 
-
-    if (!image.previousElementSibling) {
-        prev.style.visibility = "hidden";
-    } else {
-        prev.style.visibility = "visible";
+    function prevImg(event) {
+        console.log("xds")
+        if (current.previousElementSibling)
+            show(current.previousElementSibling)
     }
 
-    current = image;
-    image.style.visibility = "visible"
-
+    show(current);
 }
 
-
-function nextImg(event) {
-    console.log("Xddd")
-    if (current.nextElementSibling)
-        show(current.nextElementSibling)
-}
-
-function prevImg(event) {
-    console.log("xds")
-    if (current.previousElementSibling)
-        show(current.previousElementSibling)
-}
-
-show(current)
+klaudia();
