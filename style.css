@@ -5,38 +5,32 @@
 body{
     box-sizing: border-box;
 }
-.container{
+/*       MARCELINA     */
+
+
+.marcelina .container {
     width: 100%;
     display: flexbox;
     height: 100vh;
     justify-content: center;
     align-items: center;
-   
-    
+
 }
-.titleBox{
-    flex-basis: 100%;
-    display: flexbox;
-    justify-content: center;
-    text-align: center;
-    margin: 1em;
-}
-h1{
-    font-size: 40px;
-}
-.galleryBox{
+
+.marcelina .galleryBox {
     display: flex;
     flex-direction: row;
     flex-basis: 100%;
     justify-content: center;
     margin: 1em;
     overflow-x: scroll;
-    background-color: #f8edeb;
 }
-.photoBox{
+
+.marcelina .photoBox {
     margin: 1em;
 }
-img{
+
+.marcelina img {
     height: 500px;
     width: auto;
 }
