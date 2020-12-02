@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        .galleryBox{
+      .ps_gallery {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        overflow-x: scroll;
+      }
+      .galleryBox{
             display: flex;
         flex-direction: row;
         flex-basis: 100%;
@@ -16,9 +19,20 @@
          overflow-x: scroll;
         }
     </style>
-    <section class="marcelina">
-        <div class="galleryBox"></div>
+    <title>Galeria statyczna</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <section class="klaudia">
+      <div class="slider"></div>
     </section>
+
+    <section class="ps_gallery"></section>
+    <section class="marcelina">
+      <div class="galleryBox"></div>
+  </section>
+
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
