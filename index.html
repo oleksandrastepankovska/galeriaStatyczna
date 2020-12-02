@@ -1,44 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galeria statyczna</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      .ps_gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3000px;
+        height: 600px;
+        overflow-y: scroll;
+      }
+      .ps_gallery__image {
+        padding: 0 2rem;
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
     <section class="klaudia">
-        <div class="slider">
-        </div>
+      <div class="slider"></div>
     </section>
 
     <section class="marcelina">
-
-        <div class="container">
-            <div class="galleryBox">
-                <div class="photoBox">
-                    <img src="image/kangur.jpg" alt="">
-                </div>
-                <div class="photoBox">
-                    <img src="image/woda.jpg" alt="">
-                </div>
-                <div class="photoBox">
-                    <img src="image/wybrzeze.jpg" alt="">
-                </div>
-                <div class="photoBox">
-                    <img src="image/plaza.jpg" alt="">
-                </div>
-                <div class="photoBox">
-                    <img src="image/noc.jpg" alt="">
-                </div>
-            </div>
+      <div class="container">
+        <div class="galleryBox">
+          <div class="photoBox">
+            <img src="image/kangur.jpg" alt="" />
+          </div>
+          <div class="photoBox">
+            <img src="image/woda.jpg" alt="" />
+          </div>
+          <div class="photoBox">
+            <img src="image/wybrzeze.jpg" alt="" />
+          </div>
+          <div class="photoBox">
+            <img src="image/plaza.jpg" alt="" />
+          </div>
+          <div class="photoBox">
+            <img src="image/noc.jpg" alt="" />
+          </div>
         </div>
+      </div>
+    </section>
+    <section class="ps_gallery">
+      <div class="ps_gallery__image">
+        <img src="https://picsum.photos/500/500?random=1" alt="Random Image" />
+      </div>
+      <div class="ps_gallery__image">
+        <img src="https://picsum.photos/500/500?random=2" alt="Random Image" />
+      </div>
+      <div class="ps_gallery__image">
+        <img src="https://picsum.photos/500/500?random=3" alt="Random Image" />
+      </div>
+      <div class="ps_gallery__image">
+        <img src="https://picsum.photos/500/500?random=4" alt="Random Image" />
+      </div>
+      <div class="ps_gallery__image">
+        <img src="https://picsum.photos/500/500?random=5" alt="Random Image" />
+      </div>
     </section>
 
-
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
