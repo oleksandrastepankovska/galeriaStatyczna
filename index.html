@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Galeria statyczna</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
       .ps_gallery {
         display: flex;
@@ -18,7 +19,37 @@
       }
     </style>
   </head>
+
   <body>
+    <section class="klaudia">
+      <div class="slider">
+        <div class="slider-box"></div>
+        <label class="prev"></label>
+        <label class="next"></label>
+      </div>
+    </section>
+
+    <section class="marcelina">
+      <div class="container">
+        <div class="galleryBox">
+          <div class="photoBox">
+            <img src="image/kangur.jpg" alt="" />
+          </div>
+          <div class="photoBox">
+            <img src="image/woda.jpg" alt="" />
+          </div>
+          <div class="photoBox">
+            <img src="image/wybrzeze.jpg" alt="" />
+          </div>
+          <div class="photoBox">
+            <img src="image/plaza.jpg" alt="" />
+          </div>
+          <div class="photoBox">
+            <img src="image/noc.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="ps_gallery">
       <div class="ps_gallery__image">
         <img src="https://picsum.photos/500/500?random=1" alt="Random Image" />
@@ -36,5 +67,7 @@
         <img src="https://picsum.photos/500/500?random=5" alt="Random Image" />
       </div>
     </section>
+
+    <script src="main.js"></script>
   </body>
 </html>
