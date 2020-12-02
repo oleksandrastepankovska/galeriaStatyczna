@@ -8,53 +8,25 @@ body {
 }
 
 .klaudia {
-    height: 650px;
-    width: 1200px;
-    margin: 50px auto;
+    height: 800px;
+    width: 1600px;
+    margin: 30px auto;
 }
 
 .klaudia .slider {
     margin: 0 auto;
     position: relative;
     width: 60%;
-    height: 75%;
+    height: 80%;
+    overflow: scroll;
+    overflow-y: hidden;
 }
 
-.klaudia .slide-img {
-    top: 0px;
-    visibility: hidden;
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.klaudia .slider {
+    display: flex;
+    flex-direction: row;
 }
 
-.klaudia .slide-xd {
-    visibility: visible;
-}
-
-.klaudia .slide-img img {
-    width: 100%;
-    height: 100%;
-}
-
-.klaudia .prev,
-.klaudia .next {
-    width: 10%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.26);
-    z-index: 100;
-    cursor: pointer;
-}
-
-.klaudia .prev {
-    left: 0;
-}
-
-.klaudia .next {
-    right: 0;
-}
 
 /*       MARCELINA     */
 
